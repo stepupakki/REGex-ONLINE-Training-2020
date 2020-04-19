@@ -1,0 +1,344 @@
+Assignment by                            --                             Akshay Vishwakarma
+e-mail                                   --                             akshaymiit@gmail.com
+
+
+                              ASSIGNMENT (PYTHON )
+                                       CLASS – 1
+Que- What is Jpython & Cython ?
+Ans- Jpython & Cpython bothe are implementation way of Python, depending on the projects.
+      Cpython is the default Python implementation, whenevere we are going to download
+      Python from python.org it. Inshort we can call Python as Cpython also.
+      Cpython complies our code into bytecode and interprets that bytecode in a evaluation
+      loop.
+      CPython is also the first to implement new features,Python-the-language development
+      uses CPython as the base, other implementations follow.
+
+      Jpython is the other implementation of the Python progarmming in java.
+      Jpython compiles Pthon codes to java bytecodes so that code can on JVM.
+
+
+
+
+                               Python Source Codes
+
+
+
+
+            Cpython Compiler                         Jpython Compiler
+
+
+
+
+            Cpython Interpreter                      Cpython Interpreter
+
+
+
+
+                  CVM                                     JVM
+
+
+
+
+Que- Basic difference between Python2 &Python3 ?
+Ans-
+
+                      Basics diffrence Between Python2 & Python3
+                        Python2                                 Python3
+       Print”hello”                              Print(“hello”)
+       whenever two integers are divided, we whenever two integers are divided,
+       get a interger value                      we get a Float value
+       To store unicode string value, we require
+       to define them with “u”                   Default storing of string is unicode
+                                                 Range() function introduced to
+       xrange() is used for iteration            perform iteration
+Que- Diffrence Between ASCII & UNICODE ?
+Ans-
+                            Basic Diffrence Between ASCII & UNICODE
+                ASCII                                    UNICODE
+                Uses 8-bit encoding                      uses variable bit encoding
+                Represent 128 charecters                 Defines 2**21 charecters
+                                                         stored in bytes sequence such as
+                stored as 8-bit type                     UTF-32 & UTF-8
+                Not standerized                          Standerized
+
+
+                                 ASSIGNMENT (PYTHON )
+                                           CLASS – 2
+
+Que- what should be the output? ( 3 + 4 ** 6 – 9 * 10/2 )
+Ans-
+
+Que- Let say i have some string “hello this side regex”
+     find out the total number of vowels ?
+Ans- count = 0
+     string = "hello this side regex"
+     for char in string:
+             if char in 'aeiou':
+             count += 1
+     print (count)
+
+      OUTPUT - 7
+
+Que- Find out The Area of trangle ? Area = (1/2)*base*hieght
+Ans- def triangle_area( base , height):
+              return 0.5 * base * height
+     print(triangle_area(2,3))
+
+      OUTPUT – 3.0
+
+      import math
+      base = float(input("please enter the base value :"))
+      height = float(input("please enter the height :"))
+      area_triangle = 0.5 * base * height
+      print(area_triangle)
+
+      outut :       please enter the base value :2
+                    please enter the height :3
+                    3.0
+
+Que- print the calendar of the particular year enter by user ?
+Ans- import calendar
+
+      def printcalendar(year):
+      # printing calendar
+      print(calendar.calendar(year))
+
+      OUTPUT – printcalendar(2020)
+                       2020
+      January                        February                       March
+Mo Tu We Th Fr   Sa   Su       Mo Tu We Th Fr Sa Su          Mo Tu We Th Fr Sa Su
+       1 2 3      4    5                       1 2                              1
+ 6 7 8 9 10      11   12        3 4 5 6 7 8 9                 2 3 4 5 6 7 8
+13 14 15 16 17   18   19       10 11 12 13 14 15 16           9 10 11 12 13 14 15
+20 21 22 23 24   25   26       17 18 19 20 21 22 23          16 17 18 19 20 21 22
+27 28 29 30 31                 24 25 26 27 28 29             23 24 25 26 27 28 29
+                                                           30 31
+
+       April                           May                                June
+Mo Tu We Th Fr   Sa   Su       Mo Tu We Th Fr   Sa   Su       Mo   Tu   We Th Fr   Sa   Su
+       1 2 3      4    5                    1    2    3        1    2    3 4 5      6    7
+ 6 7 8 9 10      11   12        4 5 6 7 8        9   10        8    9   10 11 12   13   14
+13 14 15 16 17   18   19       11 12 13 14 15   16   17       15   16   17 18 19   20   21
+20 21 22 23 24   25   26       18 19 20 21 22   23   24       22   23   24 25 26   27   28
+27 28 29 30                    25 26 27 28 29   30   31       29   30
+
+        July                         August                        September
+Mo Tu We Th Fr   Sa   Su      Mo Tu We Th Fr Sa      Su       Mo Tu We Th Fr       Sa   Su
+       1 2 3      4    5                      1       2           1 2 3 4           5    6
+ 6 7 8 9 10      11   12        3 4 5 6 7 8           9        7 8 9 10 11         12   13
+13 14 15 16 17   18   19      10 11 12 13 14 15      16       14 15 16 17 18       19   20
+20 21 22 23 24   25   26      17 18 19 20 21 22      23       21 22 23 24 25       26   27
+27 28 29 30 31                24 25 26 27 28 29      30       28 29 30
+                             31
+
+      October                        November                           December
+Mo Tu We Th Fr   Sa   Su      Mo Tu We Th Fr Sa Su            Mo Tu     We Th Fr   Sa   Su
+          1 2     3    4                          1               1      2 3 4      5    6
+ 5 6 7 8 9       10   11        2 3 4 5 6 7 8                  7 8       9 10 11   12   13
+12 13 14 15 16   17   18        9 10 11 12 13 14 15           14 15     16 17 18   19   20
+19 20 21 22 23   24   25      16 17 18 19 20 21 22            21 22     23 24 25   26   27
+26 27 28 29 30   31           23 24 25 26 27 28 29            28 29     30 31
+                             30
+
+
+
+
+                               ASSIGNMENT (PYTHON )
+                                        CLASS – 3
+
+Que- Find the Armstrong Number between the two number which are input by user ?
+     > Armstrong number :153 ->1*1*1 + 5*5*5 + 3*3*3
+Ans-
+
+Que- let’s say you have a string “hello this world @2020 !!!”
+     > Remove the puncuation like [!@#$%*&()”] from the string
+Ans-
+     l1 = "hello this world @2020 !!!"
+     clean_string = l1.replace("@","").replace("@","").replace("!!!","")
+     print (l1)
+     print(clean_string)
+
+
+
+
+Que- you have a list with words - [“Apple” , “banana”,”cat”,”REGEX”,“apple”]
+       > sort words in alphabetical order
+              ~if you get output, like [“Apple”,“apple””bannana”]
+              ~how has it happened?
+Ans-
+       list1 = ["Apple","banana","cat","REGEX","apple"]
+       x = sorted(list1)
+       print(x)
+
+       OUTPUT- ['Apple', 'REGEX', 'apple', 'banana', 'cat']
+
+
+
+                                 ASSIGNMENT (PYTHON )
+                                          CLASS – 4
+
+Que- write a program to print new list which contains all the first characters of strings
+     present in a list ......
+     LIST = [“GOA”,”RAJASTHAN”,”KARNATAKA”,”GUJRAT”,MANIPUR”,”MADHYA PRADESH”]
+Ans- List =
+     ["GOA","RAJASTHAN","KARNATAKA","GUJRAT","MANIPUR","MADHYA
+     PRADESH"]
+     for final_list in List:
+             print(final_list[0])
+       OUTPUT-       G
+                     R
+                     K
+                     G
+                     M
+                     M
+
+Que- write a program to replace each string with an integer value in a given list of strings.
+
+       The replacement integer value should be a sum of ascci values of each character of type
+       corresponding string...........
+       list = [‘Ganga’.’Tapti’,’Kavero’,’Yamuna’,’Narmada’]
+
+Ans- List = ['Ganga','Tapti','Kavero','Yamuna','Narmada']
+     i=0
+     replaced_list = []
+     for final_list in List:
+             for x in final_list:
+                      i = i +ord(x)
+             replaced_list.append(i)
+     print( replaced_list)
+
+
+Que- you have to run your program at 09:00 am. Date: 14th April 2020
+     hint- you have to use datetime module or time module..
+           you have to convert your output in #list_format
+           [‘2020-04-13’ , ‘17:11:01.952975’]
+           you can do this with the help of IF/ELSE Statement
+
+
+Ans-
+from datetime import datetime
+                                      from threading import Timer
+                                      x = datetime.today()
+                                      date = datetime.strptime('2020-04-14',"%Y-%m-%d")
+                                      y = date.replace(hour=9, minute=0, second=0, microsecond=0)
+                                      delta_t = y - x
+                                      secs = delta_t.seconds + 1
+                                      def hello_world():
+                                      print("hello world")
+                                      t = Timer(secs, hello_world)
+                                      t.start()
+
+
+from datetime import datetime
+from threading import timer
+time_today = datetime.today()
+date = datetime.strptime(‘2020-04-14’,’%y-%m-%d’)
+date_rep = date.replace(hour=9, minut =0, second=0, microsecond=o)
+time_lag = date_rep- time_today
+secs = time_lag.seconds + 1
+def greet():
+            print(“hello frinend, good morning”)
+t = Timer(secs, greet)
+t.start()
+
+
+Que- Tuple: = (“a”,”i”,”g”,”o”,””,”r”,”i”,”t”,”h”,”m”)
+     1. using the concept of slicing , printthe whole tuple
+     2. delete the index at the 3rd index, print the tuple
+
+Ans- Tuple = ('a','i','g','o','r','i','t','h','m')
+     print(Tuple[:])
+
+
+
+Que- take a list REGex = [1,2,3,4,5,6,7,8,9,0,77,44,15,33,65,89,12]
+     1. print only those number greater that 20
+     2.then print those num which are less then 10
+     3. store these two list in two diffrent list
+
+Ans- x = [1,2,3,4,5,6,7,8,9,0,77,44,15,33,65,89,12]
+     list1 = []
+     list2 = []
+     for great in x:
+          if great >20:
+             list1.append(great)
+       print(list1)
+
+
+       for less in x:
+          if less<=10:
+              list2.append(less)
+       print(list2)
+
+       OUTPUT -
+                       [77, 44, 33, 65, 89]
+                       [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+
+Que- Execute standard LINUX Comand using Python Programing
+
+Que- Revise *args & **kwargs Concepts
+Ans- *arg allows you to do is take in more arguments than the number of formal
+     arguments that you previously defined. With *args, any number of extra arguments
+     can be tacked on to your current formal parameters
+     exmpl - def function_name(*argv):
+                  for arg in argv:
+                         print (arg)
+
+               function _name('Hello', 'Welcome', 'to', 'hell')
+
+               OUTPUT –        Hello
+                               Welcome
+                               to
+                               hell
+
+
+
+PYTHON TASK:
+
+1. Write a Python program to read a file line by line and store into a list.
+
+2. Write a Python program to read a file line by line store intp an array.
+
+3. Write a Python program to read a random line from a file.
+
+4. Write a Python program to combine each line from first file with the corresponding line in
+second file.
+
+5. Write a Python program to generate 26 text files named A.txt, B.txt, C.txt and so on upto
+z.txt.
+
+6. Write a program to create a file where all letters of ENGLISH alphabet are listed by
+spescified number of letters on each line.
+
+
+MAIN TASK
+1. To scrape data from worldometer example : INDIA Data and run it on live mode
+2. print Additionally total number of coronavirus casses, Deaths, Recovered.
+
+
+Python 3rd Assignement
+
+1. make a use of time module and for loop
+        output should be :
+              Loading.
+              Loading..
+              Loading...
+              Loading....
+              Loading.....
+              Loading......
+here it shows 5 output but you have to print only “Loading....” in animated form .
+
+2. Diffrence between Return & Yield ?
+
+3. make digital clock and run it for 5 sec.
+      Output :
+              :08
+              :09
+              :10
+              :11
+              :12
+
+4. Add anything in tuple ... exmp- (1,2,3,4) - > new tuple (1,2,3,4,5)
+
+5. watsapp texting using webbrowser lib
+
