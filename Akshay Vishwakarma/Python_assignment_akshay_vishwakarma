@@ -216,19 +216,6 @@ Que- you have to run your program at 09:00 am. Date: 14th April 2020
 
 
 Ans-
-from datetime import datetime
-                                      from threading import Timer
-                                      x = datetime.today()
-                                      date = datetime.strptime('2020-04-14',"%Y-%m-%d")
-                                      y = date.replace(hour=9, minute=0, second=0, microsecond=0)
-                                      delta_t = y - x
-                                      secs = delta_t.seconds + 1
-                                      def hello_world():
-                                      print("hello world")
-                                      t = Timer(secs, hello_world)
-                                      t.start()
-
-
 from datetime import datetime
 from threading import timer
 time_today = datetime.today()
